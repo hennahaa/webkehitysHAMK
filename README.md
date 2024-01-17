@@ -9,7 +9,7 @@ Analysoinnin kurssin jäljiltä koneella on todennäköisesti Python3 joten ajak
 Jolloin tämä aukeaa `localhost:8000`-osoitteessa selaimessa. 
 
 #### TODO Henna:
- - etusivun tuotekorttien muotoilut ja linkit tuotesivuille (tein siitä etusivusta nyt myös tuon shop-sivun samalla)
+ - mobiilin hampurilaisvalikko rip
  
  Yritin tuotesivun tuotekuvalla leikkiä silleen että se olisi aina saman kokoinen ja levynen näkymässä ilman että se kuva venyy ja paukkuu, eli siis `object-fit:cover;` samaan tyyliin kuin noissa etusivun korteissa mutta aivot loppu kesken. :D
 
