@@ -10,6 +10,7 @@ Jolloin tämä aukeaa `localhost:8000`-osoitteessa selaimessa.
 
 #### TODO Henna:
  - mobiilin hampurilaisvalikko rip
+ - etusivun mobiilinäkymä
  
  Yritin tuotesivun tuotekuvalla leikkiä silleen että se olisi aina saman kokoinen ja levynen näkymässä ilman että se kuva venyy ja paukkuu, eli siis `object-fit:cover;` samaan tyyliin kuin noissa etusivun korteissa mutta aivot loppu kesken. :D
 
