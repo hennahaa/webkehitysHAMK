@@ -33,6 +33,7 @@ p.card-text-style {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 450px;
 }
 
 .banner-color {
