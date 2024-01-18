@@ -7,9 +7,10 @@ Headerit ja footerit tulevat skriptinä jokaiselle sivulle, joten ne eivät näy
 
 Python-komennolla tämä aukeaa `localhost:8000`-osoitteessa selaimessa. 
 
-#### TODO Henna:
- - mobiilin hampurilaisvalikko rip
- - etusivun mobiilinäkymä
+#### Tämä branchi?
+- tuotesivun mobiilinäkymän alkua
+--> input on paskiainen
+--> jossain on jotain kovakoodattua joka laittaa näkymän muutaman pikselin vinoon? en keksinyt mitä
 
  ## Kuvat
 [unsplash](https://unsplash.com/) ja [flaticon](https://www.flaticon.com/)
