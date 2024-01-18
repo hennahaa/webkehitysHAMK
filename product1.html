@@ -51,20 +51,14 @@
           <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button> 
         </div>
 
-        <div class="d-sm-none">
-          <div class="row text-center">
-            <div class="col-4">
-              <button class="col" onclick="subtract()">-</button>
-            </div>
-            <div class="col-2">
-              <input type="text" class="" value="1" readonly>
-            </div>
-            <div class="col-4">
-              <button class="col" onclick="add()">+</button>
-            </div>
+        <div class="d-sm-none text-center px-5 pb-3">
+          <div class="input-group mb-3">
+            <span class="material-symbols-rounded input-group-text" id="inputGroup-sizing-default" onclick="subtract()">remove</span>
+            <input type="text" class="form-control" value="1" readonly>
+            <span class="material-symbols-rounded input-group-text" id="inputGroup-sizing-default" onclick="add()">add</span>
           </div>
           <div class="text-center">
-            <button class="btn btn-primary w-50 text" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""></button>
+            <button class="btn btn-primary w-75 text" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""></button>
           </div>
           
         </div>

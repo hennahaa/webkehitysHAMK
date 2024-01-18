@@ -9,7 +9,7 @@ Python-komennolla tämä aukeaa `localhost:8000`-osoitteessa selaimessa.
 
 #### Tämä branchi?
 - tuotesivun mobiilinäkymän alkua
---> input on paskiainen
+- input + ja - ei toimi mobiilinäkymässä syystä x
 
  ## Kuvat
 [unsplash](https://unsplash.com/) ja [flaticon](https://www.flaticon.com/)
