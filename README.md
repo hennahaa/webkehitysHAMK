@@ -10,7 +10,6 @@ Python-komennolla tämä aukeaa `localhost:8000`-osoitteessa selaimessa.
 #### Tämä branchi?
 - tuotesivun mobiilinäkymän alkua
 --> input on paskiainen
---> jossain on jotain kovakoodattua joka laittaa näkymän muutaman pikselin vinoon? en keksinyt mitä
 
  ## Kuvat
 [unsplash](https://unsplash.com/) ja [flaticon](https://www.flaticon.com/)
