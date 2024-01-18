@@ -18,6 +18,11 @@ card {
     border: none !important;
 }
 
+.btn-primary {
+    background-color: var(--bs-cyan) !important;
+    border: none !important;
+}
+
 .subheader {
     font-family: 'Akshar', sans-serif;
 }
