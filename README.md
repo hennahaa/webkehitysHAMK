@@ -1,12 +1,11 @@
 # RYHMÄTYÖ WEB-KEHITYS M23A
 
 ## Mitä?
-Headerit ja footerit tulevat skriptinä jokaiselle sivulle, joten ne eivät näy, jos sivut avaa paikallisesti.
-Analysoinnin kurssin jäljiltä koneella on todennäköisesti Python3 joten ajakaa kansiossa komentorivillä:
+Headerit ja footerit tulevat skriptinä jokaiselle sivulle, joten ne eivät näy, jos sivut avaa paikallisesti. Toimii esimerkiksi, jos käyttää sitä Live Server-lisäosaa VScodessa tai jos ajaa kansiossa komentorivillä tän:
 
 `python -m http.server`
 
-Jolloin tämä aukeaa `localhost:8000`-osoitteessa selaimessa. 
+Python-komennolla tämä aukeaa `localhost:8000`-osoitteessa selaimessa. 
 
 #### TODO Henna:
  - mobiilin hampurilaisvalikko rip
