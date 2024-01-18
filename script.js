@@ -24,13 +24,13 @@ class SiteHeader extends HTMLElement {
   </header>
 
   <!--HEADER FOR XS-->
-  <header class="d-flex d-block d-sm-none">
-    <nav class="navbar d-flex justify-content-between fs-5 py-0 container-fluid bg-light row">
-      <div class="col-4 d-flex justify-content-start">
-        <span class="material-symbols-rounded size-40 ps-2"><a href="#" class="nav-link">menu</a></span>
-      </div>
+  <header class="d-flex d-block d-sm-none aria-expanded">
+    <nav class="navbar d-flex justify-content-between fs-5 py-0 container-fluid bg-light flex-row">
+      <div class="col-4 d-flex justify-content-start" >
+        <span class="material-symbols-rounded size-40 ps-2"><a data-bs-toggle="collapse" href="#collapse" aria-expanded="false" aria-controls="collapse" class="nav-link">menu</a></span>
+        </div>
       <div class="d-flex col-4 justify-content-center">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand mx-auto" href="index.html">
           <img src="img/keyboard_2.png" class="img-header-logo" alt="site logo">
         </a>
       </div>
@@ -38,6 +38,13 @@ class SiteHeader extends HTMLElement {
         <span class="material-symbols-rounded pe-2"><a href="#" class="nav-link">person</a></span>
         <span class="material-symbols-rounded pe-2"><a href="#" class="nav-link">shopping_cart</a></span>
       </div>
+    <div class="collapse" id="collapse">
+    <ul class="d-flex justify-content-evenly nav">
+      <li class="nav-item px-2 col-4"><a href="index.html" class="nav-link nav-color fw-bolder fs-5">Shop</a></li>
+      <li class="nav-item px-2 col-4"><a href="about.html" class="nav-link nav-color fw-bolder fs-5">About</a></li>
+      <li class="nav-item px-2 col-4"><a href="contact.html" class="nav-link nav-color fw-bolder fs-5">Contact</a></li>
+    </ul>
+    </div>
     </nav>
   </header>
   `
