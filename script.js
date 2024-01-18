@@ -1,8 +1,9 @@
 class SiteHeader extends HTMLElement {
  connectedCallback() {
     this.innerHTML = `
-    <header class="container">
-    <nav class="navbar d-flex justify-content-between align-items-center fs-5 py-1 container-fluid">
+    <!--HEADER SM AND UP-->
+    <header class="d-flex d-none d-sm-block">
+    <nav class="navbar d-flex justify-content-between align-items-center fs-5 py-0 container-fluid bg-light">
         <div class="">
           <a class="navbar-brand" href="index.html">
             <img src="img/keyboard_2.png" class="img-header-logo float-start" alt="site logo">
@@ -16,9 +17,24 @@ class SiteHeader extends HTMLElement {
           </ul>
         </div>
         <div class="">
-          <span class="material-symbols-outlined px-2"><a href="#" class="nav-link">person</a></span>
-          <span class="material-symbols-outlined px-2"><a href="#" class="nav-link">shopping_cart</a></span>
+          <span class="material-symbols-rounded size-40 pe-3"><a href="#" class="nav-link">person</a></span>
+          <span class="material-symbols-rounded size-40 pe-3"><a href="#" class="nav-link">shopping_cart</a></span>
         </div>
+    </nav>
+  </header>
+
+  <!--HEADER FOR XS-->
+  <header class="d-flex d-block d-sm-none">
+    <nav class="navbar d-flex justify-content-between fs-5 py-0 container-fluid bg-light row">
+      <div class="col-4"></div>
+      <div class="d-flex col-4 justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/keyboard_2.png" class="img-header-logo" alt="site logo">
+        </a>
+      </div>
+      <div class="col-4 d-flex justify-content-end">
+        <span class="material-symbols-rounded size-40"><a href="#" class="nav-link">menu</a></span>
+      </div>
     </nav>
   </header>
   `
