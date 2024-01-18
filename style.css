@@ -14,8 +14,29 @@ h5.footer-h {
     font-weight:500;
 }
 
-card {
-    border: none !important;
+h5.price {
+    color: var(--bs-cyan) !important;
+    font-family: 'Outfit', sans-serif;
+    font-weight:500;
+    font-size: 25px;
+
+}
+
+a.product-link {
+    text-decoration: none;
+    color: var(--bs-body-color) !important;
+}
+
+a.product-link:hover {
+    text-decoration: none;
+    color: var(--bs-light) !important;
+    background-color: var(--bs-gray) !important;
+}
+
+p.card-text-style {
+    color: var(--bs-cyan) !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight:500;
 }
 
 .btn-primary {
@@ -25,12 +46,6 @@ card {
 
 .subheader {
     font-family: 'Akshar', sans-serif;
-}
-
-p.card-text-style {
-    color: var(--bs-cyan) !important;
-    font-family: 'DM Sans', sans-serif !important;
-    font-weight:500;
 }
 
 .keyboard-bg {
@@ -75,7 +90,7 @@ span.size-40 {
     font-variation-settings: 'OPSZ' 40;
   }
 
-  .card-img-top {
+.card-img-top {
     width: 100%;
     height: 14vw;
     object-fit: cover;
@@ -85,6 +100,12 @@ span.size-40 {
     width: 100%;
     height: 32vw;
     object-fit: cover;
+}
+
+.product-thumbnail {
+    width: 100%;
+    height: 14vw;
+    object-fit:cover;
 }
 
  .nav-color {
@@ -99,14 +120,6 @@ span.size-40 {
 
 .button-container {
     /* display: flex; */
-}
-
-h5.price {
-    color: var(--bs-cyan) !important;
-    font-family: 'Outfit', sans-serif;
-    font-weight:500;
-    font-size: 25px;
-
 }
 
 .quantity-button-l {
@@ -189,7 +202,6 @@ h5.price {
 }
 
 .other-products-container img {
-    margin-top: 20px;
     object-fit: contain;
     width: 200px;
     height: auto;
@@ -198,19 +210,6 @@ h5.price {
 /* .col-sm {
     background-color: aquamarine;
 } */
-
-
-
-a.product-link {
-    text-decoration: none;
-    color: var(--bs-body-color) !important;
-}
-
-a.product-link:hover {
-    text-decoration: none;
-    color: var(--bs-light) !important;
-    background-color: var(--bs-gray) !important;
-}
 
 .card-body-link:hover {
     background-color: var(--bs-gray-900) !important;

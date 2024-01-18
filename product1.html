@@ -34,22 +34,43 @@
  <div class ="container">
     <h1 class="text-center"> LOREM IPSUM</h1>
     <div class="row">
-      <div class="col-6 product-image">
+      <div class="col-md-6 col-sm-12 col-xs-12 product-image">
         <img src="img/product-1.jpg" class="product-image" alt="tuote">
       </div>
-      <div class="col-6">
+      <div class="col-md-6 col-sm-12 col-xs-12">
         <!-- Jussin lisäyksiä: -->
         <h3>Tuote</h3>
         <h5 class="price">9,99€</h5>
         <h5>Deliveras 1-2 dies.</h5>
         <h6>Quantitas:</h6>
         <!-- experimental määrä -->
-        <div class="button-container">
+        <div class="button-container d-none d-sm-block">
           <button class="quantity-button-l" onclick="subtract()">-</button>
           <input type="text" class="quantity-input" value="1" readonly>
           <button class="quantity-button-r" onclick="add()">+</button>
-          <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button> <!--style="float:left;vertical-align: middle;"-->
-      <div id="message"></div>    
+          <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button> 
+        </div>
+
+        <div class="d-sm-none">
+          <div class="row text-center">
+            <div class="col-4">
+              <button class="col" onclick="subtract()">-</button>
+            </div>
+            <div class="col-2">
+              <input type="text" class="" value="1" readonly>
+            </div>
+            <div class="col-4">
+              <button class="col" onclick="add()">+</button>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary w-50 text" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""></button>
+          </div>
+          
+        </div>
+          
+      
+          <div id="message"></div>    
       </div>
       
       <script src="script.js"></script>
@@ -76,25 +97,58 @@
           </div>
       </div>    
     </div>
-  <div class="other-products-container">
-    <h2>Others also bought</h2>
-      <div class="row">
-        
-          <div class="col-4"><a href="product3.html"><img src="img/product-3.jpg" alt="Keyboard">
-            <h5>Lorem ipsum</h5>
-            <h5 class="price">9,99€</h5>
+  <div class="container-fluid">
+    <h2 class="text-center">Others also bought:</h2>
+      <div class="row container row-cols-md-3">
+
+        <div class="col-md-4 col-sm-12 col-xs-12 pb-3">
+          <div class="shadow card-body-link">
+            <a class="product-link" href="product3.html">
+              <img src="img/product-3.jpg" class="product-thumbnail" alt="Third Keyboard">
+              <div class=" p-3">
+              <h5 class="card-title">
+                KEYBOARD
+              </h5>
+              <p class="card-text card-text-style text-end fw-bold fs-6">
+                49,99 €
+              </p>
+            </div>
           </a>
+          </div>
         </div>
-        <div class="col-4"><a href="product4.html"><img src="img/product-4.jpg" alt="Keyboard">
-          <h5>Lorem ipsum</h5>
-          <h5 class="price">9,99€</h5>
-        </a>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 pb-3">
+          <div class="shadow card-body-link">
+            <a class="product-link" href="product4.html">
+              <img src="img/product-4.jpg" class="product-thumbnail" alt="Third Keyboard">
+              <div class=" p-3">
+              <h5 class="card-title">
+                KEYBOARD
+              </h5>
+              <p class="card-text card-text-style text-end fw-bold fs-6">
+                49,99 €
+              </p>
+            </div>
+          </a>
+          </div>
         </div>
-        <div class="col-4"><a href="product5.html"><img src="img/product-5.jpg" alt="Keyboard">
-          <h5>Lorem ipsum</h5>
-          <h5 class="price">9,99€</h5>
-        </a>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 pb-3">
+          <div class="shadow card-body-link">
+            <a class="product-link" href="product5.html">
+              <img src="img/product-5.jpg" class="product-thumbnail" alt="Third Keyboard">
+              <div class=" p-3">
+              <h5 class="card-title">
+                KEYBOARD
+              </h5>
+              <p class="card-text card-text-style text-end fw-bold fs-6">
+                49,99 €
+              </p>
+            </div>
+          </a>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
