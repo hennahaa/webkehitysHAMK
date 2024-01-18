@@ -82,5 +82,50 @@ class SiteFooter extends HTMLElement {
      `
     }
    }
-   
+
    customElements.define('site-footer', SiteFooter)
+
+/*Declaration of ind--- variable to make the buttons work*/
+var currentQuantity;
+
+/*Add from the counter*/
+   function add() {
+    var quantityInput = document.querySelector('.quantity-input');
+    var currentQuantity = parseInt(quantityInput.value);
+
+    if (!isNaN(currentQuantity)) {
+        quantityInput.value = currentQuantity + 1;
+    }
+}
+/*Subtract from the counter*/
+function subtract() {
+    var quantityInput = document.querySelector('.quantity-input');
+    var currentQuantity = parseInt(quantityInput.value);
+
+    if (!isNaN(currentQuantity) && currentQuantity > 1) {
+        quantityInput.value = currentQuantity - 1;
+    }
+}
+
+/*Add stuff to cart and reset the counter*/
+function addToCart() {
+    currentQuantity = 1;
+}
+
+/*Display message*/
+function messagePop() {
+  const message = document.getElementById("message");
+  if(currentQuantity==1) {
+    message.innerText = "Item added to cart!"
+  }
+  else {
+  message.innerText = currentQuantity + " items added to cart!";
+  }
+  
+}
+
+/*Begone, text!*/
+setTimeout(()=>{
+  const sometext=document.getElementById("message");
+  sometext.style.display="none";
+},7500);

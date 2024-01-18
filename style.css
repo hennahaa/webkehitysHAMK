@@ -92,6 +92,110 @@ span.size-40 {
     color: var(--bs-cyan) !important;
 }
 
+.button-container {
+    /* display: flex; */
+}
+
+h5.price {
+    color: var(--bs-cyan) !important;
+    font-family: 'Outfit', sans-serif;
+    font-weight:500;
+    font-size: 25px;
+
+}
+
+.quantity-button-l {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px; /*40px*/
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.quantity-button-r {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px; /*40px*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.quantity-input {
+    width: 100px; /*60px */
+    text-align: center;
+    font-size: 16px;
+}
+
+.add-to-cart-button {
+    padding: 4px 6px;
+    width: 200px; /*140px*/
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--bs-cyan);
+    font-family: 'DM Sans Regular', sans-serif;
+    font-size: 21px;
+    color: var(--bs-white) !important;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.quantity-button-l, .quantity-button-r, .quantity-input, .add-to-cart-button, .message {
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.add-to-cart-button img {
+    margin: 0 5px 5px 0;
+    align-items: center;
+}
+
+.message {
+    display: none;
+    background-color: blueviolet;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 4px 6px; */
+}
+
+.flavortext-container {
+    margin-top: 10px;
+    font-family: 'DM Sans Regular', sans-serif;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.other-products-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.other-products-container a {
+    text-decoration: none;
+}
+.other-products-container a:hover {
+    cursor: pointer;
+}
+
+.other-products-container img {
+    margin-top: 20px;
+    object-fit: contain;
+    width: 200px;
+    height: auto;
+}
+
+/* .col-sm {
+    background-color: aquamarine;
+} */
+
+
+
 a.product-link {
     text-decoration: none;
     color: var(--bs-body-color) !important;
