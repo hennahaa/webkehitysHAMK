@@ -26,14 +26,17 @@ class SiteHeader extends HTMLElement {
   <!--HEADER FOR XS-->
   <header class="d-flex d-block d-sm-none">
     <nav class="navbar d-flex justify-content-between fs-5 py-0 container-fluid bg-light row">
-      <div class="col-4"></div>
+      <div class="col-4 d-flex justify-content-start">
+        <span class="material-symbols-rounded size-40 ps-2"><a href="#" class="nav-link">menu</a></span>
+      </div>
       <div class="d-flex col-4 justify-content-center">
         <a class="navbar-brand" href="index.html">
           <img src="img/keyboard_2.png" class="img-header-logo" alt="site logo">
         </a>
       </div>
       <div class="col-4 d-flex justify-content-end">
-        <span class="material-symbols-rounded size-40"><a href="#" class="nav-link">menu</a></span>
+        <span class="material-symbols-rounded pe-2"><a href="#" class="nav-link">person</a></span>
+        <span class="material-symbols-rounded pe-2"><a href="#" class="nav-link">shopping_cart</a></span>
       </div>
     </nav>
   </header>
