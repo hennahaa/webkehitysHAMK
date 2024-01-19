@@ -205,7 +205,6 @@ h5.price {
 } */
 
 
-
 a.product-link {
     text-decoration: none;
     color: var(--bs-body-color) !important;
@@ -220,3 +219,18 @@ a.product-link:hover {
 .card-body-link:hover {
     background-color: var(--bs-gray-900) !important;
 }
+
+.avatar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.smaller-image {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .card-name, .card-title, .card-text {
+    padding: 5px;
+
+  }
