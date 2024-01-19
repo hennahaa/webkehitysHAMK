@@ -222,12 +222,13 @@ a.product-link:hover {
 }
 
 .avatar {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 60% !important;
+    margin-bottom: 25px;
 }
 
 .smaller-image {
-    max-width: 20%;
+    max-width: 100% !important;
     height: auto;
   }
 
