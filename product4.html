@@ -31,18 +31,75 @@
  
  <!-- CONTENT -->
 
- <div class ="container py-5">
-  <h1 class="text-center"> LOREM IPSUM </h1>
-  <div class="row">
-    <div class="col-6">
+ <div class ="container-py5">
+  <h1 class="text-center"> LOREM IPSUM</h1>
+  <!-- <div class="col-8"> -->
+  <div class="row justify-content-center">
+    <div class="col-4 product-image">
       <img src="img/product-4.jpg" class="product-image" alt="tuote">
     </div>
-    <div class="col-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in neque dolor. Sed suscipit, lacus non venenatis posuere, purus elit interdum nunc, vel pellentesque nibh ex sit amet nisl. Praesent nec lorem nibh. Aenean pretium aliquet purus. Proin ullamcorper tempor maximus. Nunc semper lacus nec est egestas placerat. Aenean feugiat interdum eros, eget pulvinar orci commodo at. Quisque vel mi quis erat pulvinar efficitur. Duis egestas tellus libero, aliquet suscipit mi interdum quis.</p>
+    <div class="col-4">
+      <!-- Jussin lisäyksiä: -->
+      <h3>Productus</h3>
+      <h5 class="price">9,99€</h5>
+      <h5>Deliveras 1-2 dies.</h5>
+      <h6>Quantitas:</h6>
+      <!-- experimental määrä -->
+      <div class="button-container">
+        <button class="quantity-button-l" onclick="subtract()">-</button>
+        <input type="text" class="quantity-input" value="1" readonly>
+        <button class="quantity-button-r" onclick="add()">+</button>
+        <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button> <!--style="float:left;vertical-align: middle;"-->
+    <div id="message"></div>    
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- päättyy -->
+    <!-- add to cart testailu -->
+    <!-- päättyy -->
+    <div class="flavortext-container">
+      <p>Mattis nec mauris. Pellentesque a dignissim orci.</p>
+
+      <p>Sed ullamcorper vestibulum quam, quis imperdiet felis
+          interdum nec. Curabitur elementum ligula a felis lobortis
+          bibendum non eu diam. Nam dolor ipsum, efficitur at
+          aliquam vel, dictum non purus. In sed felis ut velit porta
+          vestibulum ut ut lacus.</p>
+          
+          <p>Contenta:</p>
+            <ul>
+              <li>2 st littera “A”</li>
+              <li>2 st littera “Я”</li>
+              <li>1 st littera “Ö”</li>
+              <li>1 st littera “Ç”</li>
+             </ul>
+          <p>plus...</p>
+      </div>
+    </div>    
+  </div>
+<!-- </div> -->
+<div class="col-8 mx-auto other-products-container">
+  <h2>Others also bought</h2>
+    <div class="row">
+      
+        <div class="col-4"><a href="product5.html"><img src="img/product-5.jpg" alt="Keyboard">
+            <h5>Lorem ipsum</h5>
+            <h5 class="price">9,99€</h5>
+          </a>
+        </div>
+        <div class="col-4"><a href="product6.html"><img src="img/product-6.jpg" alt="Keyboard">
+          <h5>Lorem ipsum</h5>
+          <h5 class="price">9,99€</h5>
+          </a>
+        </div>
+        <div class="col-4"><a href="product1.html"><img src="img/product-1.jpg" alt="Keyboard">
+          <h5>Lorem ipsum</h5>
+          <h5 class="price">9,99€</h5>
+          </a>
+        </div>
     </div>
   </div>
 </div>
-
  <!--CONTENT-->
 
   <!--FOOTER-->
