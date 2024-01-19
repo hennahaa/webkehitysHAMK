@@ -83,7 +83,7 @@ span.size-40 {
 
 .product-image {
     width: 100%;
-    height: 32vw;
+    /* height: 32vw; */
     object-fit: cover;
 }
 
@@ -97,9 +97,10 @@ span.size-40 {
     color: var(--bs-cyan) !important;
 }
 
+/*
 .button-container {
-    /* display: flex; */
-}
+    display: flex;
+}*/
 
 h5.price {
     color: var(--bs-cyan) !important;
@@ -170,10 +171,14 @@ h5.price {
 }
 
 .flavortext-container {
-    margin-top: 10px;
-    font-family: 'DM Sans Regular', sans-serif;
-    font-size: large;
+    margin-top: 40px;
     margin-bottom: 10px;
+}
+
+.flavortext-container p, ul, li {
+    font-family: 'DM Sans', sans-serif;
+    font-size: large;
+    font-weight: 500;
 }
 
 .other-products-container {
