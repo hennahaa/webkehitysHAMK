@@ -83,8 +83,14 @@ span.size-40 {
 
 .product-image {
     width: 100%;
-    /* height: 32vw; */
+    height: 32vw;
     object-fit: cover;
+}
+
+.product-thumbnail {
+    width: 100% !important;
+    height: 14vw !important;
+    object-fit:cover !important;
 }
 
  .nav-color {
@@ -200,11 +206,6 @@ h5.price {
     height: auto;
 }
 
-/* .col-sm {
-    background-color: aquamarine;
-} */
-
-
 a.product-link {
     text-decoration: none;
     color: var(--bs-body-color) !important;
@@ -230,7 +231,7 @@ a.product-link:hover {
     height: auto;
   }
 
-  .card-name, .card-title, .card-text {
+.card-name, .card-title, .card-text {
     padding: 5px;
 
   }
