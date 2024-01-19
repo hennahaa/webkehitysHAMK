@@ -87,6 +87,12 @@ span.size-40 {
     object-fit: cover;
 }
 
+.product-thumbnail {
+    width: 100% !important;
+    height: 14vw !important;
+    object-fit:cover !important;
+}
+
  .nav-color {
     color: var(--bs-body-color) !important;
     font-family: 'Outfit', sans-serif;
@@ -97,9 +103,10 @@ span.size-40 {
     color: var(--bs-cyan) !important;
 }
 
+/*
 .button-container {
-    /* display: flex; */
-}
+    display: flex;
+}*/
 
 h5.price {
     color: var(--bs-cyan) !important;
@@ -170,10 +177,14 @@ h5.price {
 }
 
 .flavortext-container {
-    margin-top: 10px;
-    font-family: 'DM Sans Regular', sans-serif;
-    font-size: large;
+    margin-top: 40px;
     margin-bottom: 10px;
+}
+
+.flavortext-container p, ul, li {
+    font-family: 'DM Sans', sans-serif;
+    font-size: large;
+    font-weight: 500;
 }
 
 .other-products-container {
@@ -195,12 +206,6 @@ h5.price {
     height: auto;
 }
 
-/* .col-sm {
-    background-color: aquamarine;
-} */
-
-
-
 a.product-link {
     text-decoration: none;
     color: var(--bs-body-color) !important;
@@ -215,3 +220,18 @@ a.product-link:hover {
 .card-body-link:hover {
     background-color: var(--bs-gray-900) !important;
 }
+
+.avatar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.smaller-image {
+    max-width: 20%;
+    height: auto;
+  }
+
+.card-name, .card-title, .card-text {
+    padding: 5px;
+
+  }
