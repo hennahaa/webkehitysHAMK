@@ -113,7 +113,6 @@ h5.price {
     font-family: 'Outfit', sans-serif;
     font-weight:500;
     font-size: 25px;
-
 }
 
 .quantity-button-l {
@@ -235,4 +234,27 @@ a.product-link:hover {
 .card-name, .card-title, .card-text {
     padding: 5px;
 
+  }
+
+  @media only screen and (max-width: 668px) {
+    .quantity-button-l, .quantity-button-r, .quantity-input, .add-to-cart-button, .message {
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+   .quantity-button-l, .quantity-button-r {
+        padding: 0px 0px;
+        font-size: 25px;
+        text-align: center;
+        width: 20%;
+    }
+
+    .quantity-input {
+        width: 60%;
+    }
+    .add-to-cart-button {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
   }
