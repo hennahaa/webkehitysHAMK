@@ -33,55 +33,74 @@
 
  <div class ="container-py5">
     <h1 class="text-center"> LOREM IPSUM</h1>
-    <!-- <originelli div alkaa> -->
-      <!-- DESKTOP ALKAA -->
-   <div class="row j justify-content-center d-none d-md-flex">
-      <div class="col-md-4 col-sm-12 col-12 product-image">
-        <img src="img/product-1.jpg" class="product-image img-fluid" alt="tuote">
-      </div>
-      <div class="col-md-4 col-sm-12 col-12">
-        <!-- Jussin lisäyksiä: -->
-        <h3>Productus</h3>
-        <h5 class="price">9,99€</h5>
-        <h5>Deliveras 1-2 dies.</h5>
-        <h6>Quantitas:</h6>
-        <!-- experimental määrä -->
-        <div class="button-container">
-          <button class="quantity-button-l" onclick="subtract()">-</button>
-          <input type="text" class="quantity-input" value="1" readonly>
-          <button class="quantity-button-r" onclick="add()">+</button>
-          <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button> <!--style="float:left;vertical-align: middle;"-->
-      <div id="message"></div>    
+
+<!-- DESKTOP -->
+<div class="row j justify-content-center d-none d-md-flex">
+  <div class="col-md-4 col-sm-12 col-12 product-image">
+    <img src="img/product-1.jpg" class="product-image img-fluid" alt="tuote">
+  </div>
+    <div class="col-md-4 col-sm-12 col-12">
+      <h3>Productus</h3>
+      <h5 class="price">9,99€</h5>
+      <h5>Deliveras 1-2 dies.</h5>
+      <h6>Quantitas:</h6>
+
+        <!-- Buttonit -->
+      <div class="button-container">
+        <button class="quantity-button-l" onclick="subtract()">-</button>
+        <input type="text" class="quantity-input" value="1" readonly>
+        <button class="quantity-button-r" onclick="add()">+</button>
+        <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button>
+        <div id="message"></div>    
       </div>
       
       <script src="script.js"></script>
-      <!-- päättyy -->
-      <!-- add to cart testailu -->
-      <!-- päättyy -->
+
       <div class="flavortext-container">
         <p>Mattis nec mauris. Pellentesque a dignissim orci.</p>
 
-        <p>Sed ullamcorper vestibulum quam, quis imperdiet felis
-            interdum nec. Curabitur elementum ligula a felis lobortis
-            bibendum non eu diam. Nam dolor ipsum, efficitur at
-            aliquam vel, dictum non purus. In sed felis ut velit porta
-            vestibulum ut ut lacus.</p>
-            
-            <p>Contenta:</p>
-              <ul>
-                <li>2 st littera “A”</li>
-                <li>2 st littera “Я”</li>
-                <li>1 st littera “Ö”</li>
-                <li>1 st littera “Ç”</li>
-               </ul>
-            <p>plus...</p>
-        </div>
-      </div>    
-    </div>
+        <p>
+          Sed ullamcorper vestibulum quam, quis imperdiet felis
+          interdum nec. Curabitur elementum ligula a felis lobortis
+          bibendum non eu diam. Nam dolor ipsum, efficitur at
+          aliquam vel, dictum non purus. In sed felis ut velit porta
+          vestibulum ut ut lacus.
+        </p>
+              
+        <p>Contenta:</p>
+          <ul>
+            <li>2 st littera “A”</li>
+            <li>2 st littera “Я”</li>
+            <li>1 st littera “Ö”</li>
+            <li>1 st littera “Ç”</li>
+            <span id="dots">...</span>
+            <span id="more">
+            <li>1 st littera “Ꙟ”</li>
+            <li>1 st littera “E”</li>
+            <li>1 st littera “A”</li>
+            <li>1 st littera “S”</li>
+            <li>1 st littera “T”</li>
+            <li>1 st littera “E”</li>
+            <li>1 st littera “R”</li>
+            <li>1 st littera “E”</li>
+            <li>1 st littera “G”</li>
+            <li>1 st littera “G”</li>
+            <li>1 st littera “ ” (Spacem-barus)</li>
+            <li>1 st littera “F”</li>
+            <li>1 st littera “O”</li>
+            <li>1 st littera “U”</li>
+            <li>1 st littera “N”</li>
+            <li>1 st littera “D”</li>
+            </span>
+          </ul>
+          <button onclick="showMore()" id="myBtn">Show more</button>
+      </div>
+    </div>    
   </div>
-  <!-- DESKTOP PÄÄTTYY -->
-<!-- testi alkaa -->
-<!-- M O B I I L I  A L K A A -->
+</div>
+<!-- /DESKTOP -->
+
+<!-- MOBIILI -->
 <div class="container-fluid">
   <div class="row justify-content-center d-flex d-md-none">
     <div class="col-12">
@@ -91,73 +110,89 @@
 
   <div class="row justify-content-center d-flex d-md-none">
     <div class="col-12">
-      <!-- Jussin lisäyksiä: -->
-      <h3>Productus</h3>
-      <h5 class="price">9,99€</h5>
-      <h5>Deliveras 1-2 dies.</h5>
-      <h6>Quantitas:</h6>
-      <!-- experimental määrä -->
+        <h3>Productus</h3>
+        <h5 class="price">9,99€</h5>
+        <h5>Deliveras 1-2 dies.</h5>
+        <h6>Quantitas:</h6>
+
+      <!-- Buttonit -->
       <div class="button-container col-12 d-flex mb-1">
         <button class="quantity-button-l" onclick="subtract()">-</button>
         <input type="text" class="quantity-input" value="1" readonly>
         <button class="quantity-button-r" onclick="add()">+</button>
       </div>
       <div class="button-container col-12 d-flex">
-        <button class="add-to-cart-button" onclick="addToCart();messagePop();">
-          <img src="img/cart2.png" alt="">Add to cart
-        </button>
-        <!--style="float:left;vertical-align: middle;"-->
+        <button class="add-to-cart-button" onclick="addToCart();messagePop();"><img src="img/cart2.png" alt="">Add to cart</button>
         <div id="message"></div>
       </div>
       <script src="script.js"></script>
-      <!-- päättyy -->
-      <!-- add to cart testailu -->
-      <!-- päättyy -->
-      <div class="flavortext-container mt-3">
+
+      <div class="flavortext-container">
         <p>Mattis nec mauris. Pellentesque a dignissim orci.</p>
 
-        <p>Sed ullamcorper vestibulum quam, quis imperdiet felis
+        <p>
+          Sed ullamcorper vestibulum quam, quis imperdiet felis
           interdum nec. Curabitur elementum ligula a felis lobortis
           bibendum non eu diam. Nam dolor ipsum, efficitur at
           aliquam vel, dictum non purus. In sed felis ut velit porta
-          vestibulum ut ut lacus.</p>
-
+          vestibulum ut ut lacus.
+        </p>
+            
         <p>Contenta:</p>
         <ul>
           <li>2 st littera “A”</li>
           <li>2 st littera “Я”</li>
           <li>1 st littera “Ö”</li>
           <li>1 st littera “Ç”</li>
+          <span id="dots">...</span>
+          <span id="more">
+          <li>1 st littera “Ꙟ”</li>
+          <li>1 st littera “E”</li>
+          <li>1 st littera “A”</li>
+          <li>1 st littera “S”</li>
+          <li>1 st littera “T”</li>
+          <li>1 st littera “E”</li>
+          <li>1 st littera “R”</li>
+          <li>1 st littera “E”</li>
+          <li>1 st littera “G”</li>
+          <li>1 st littera “G”</li>
+          <li>1 st littera “ ” (Spacem-barus)</li>
+          <li>1 st littera “F”</li>
+          <li>1 st littera “O”</li>
+          <li>1 st littera “U”</li>
+          <li>1 st littera “N”</li>
+          <li>1 st littera “D”</li>
+          </span>
         </ul>
-        <p>plus...</p>
+        <button class="show-more"onclick="showMore()" id="myBtn">Show more</button>
+      </div>
+    </div>    
+  </div>
+</div>
+<!-- /MOBIILI -->
+
+<!-- OTHER PRODUCTS -->
+<div class="col-8 mx-auto other-products-container">
+  <h2>Others also bought</h2>
+  <div class="row">
+    <div class="col-4"><a href="product2.html"><img class="product-thumbnail" src="img/product-2.jpg" alt="Keyboard">
+      <h5>Lorem ipsum</h5>
+      <h5 class="price">9,99€</h5>
+      </a>
+    </div>
+    <div class="col-4"><a href="product3.html"><img class="product-thumbnail" src="img/product-3.jpg" alt="Keyboard">
+      <h5>Lorem ipsum</h5>
+      <h5 class="price">9,99€</h5>
+      </a>
+    </div>
+    <div class="col-4"><a href="product4.html"><img class="product-thumbnail" src="img/product-4.jpg" alt="Keyboard">
+      <h5>Lorem ipsum</h5>
+      <h5 class="price">9,99€</h5>
+      </a>
     </div>
   </div>
 </div>
-</div>
-<!-- MOBIILI PÄÄTTYY -->
-<!-- testi päättyy -->
-  <div class="col-8 mx-auto other-products-container">
-    <h2>Others also bought</h2>
-      <div class="row">
-        
-          <div class="col-4"><a href="product2.html"><img class="product-thumbnail" src="img/product-2.jpg" alt="Keyboard">
-              <h5>Lorem ipsum</h5>
-              <h5 class="price">9,99€</h5>
-            </a>
-          </div>
-          <div class="col-4"><a href="product3.html"><img class="product-thumbnail" src="img/product-3.jpg" alt="Keyboard">
-            <h5>Lorem ipsum</h5>
-            <h5 class="price">9,99€</h5>
-            </a>
-          </div>
-          <div class="col-4"><a href="product4.html"><img class="product-thumbnail" src="img/product-4.jpg" alt="Keyboard">
-            <h5>Lorem ipsum</h5>
-            <h5 class="price">9,99€</h5>
-            </a>
-          </div>
-      </div>
-    </div>
-
+<!-- /OTHER PRODUCTS -->
  <!--CONTENT-->
 
   <!--FOOTER-->

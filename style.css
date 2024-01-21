@@ -186,6 +186,13 @@ h5.price {
     font-weight: 500;
 }
 
+.text-more {
+    font-style: italic;
+    color: rgb(128, 128, 128);
+}
+
+#more {display: none;}
+
 .other-products-container {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -252,7 +259,7 @@ a.product-link:hover {
     .quantity-input {
         width: 60%;
     }
-    .add-to-cart-button {
+    .add-to-cart-button, .show-more {
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
