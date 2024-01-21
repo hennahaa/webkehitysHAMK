@@ -103,11 +103,6 @@ span.size-40 {
     color: var(--bs-cyan) !important;
 }
 
-/*
-.button-container {
-    display: flex;
-}*/
-
 h5.price {
     color: var(--bs-cyan) !important;
     font-family: 'Outfit', sans-serif;
@@ -132,6 +127,7 @@ h5.price {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .quantity-input {
     width: 100px; /*60px */
     text-align: center;
@@ -186,11 +182,6 @@ h5.price {
     font-weight: 500;
 }
 
-.text-more {
-    font-style: italic;
-    color: rgb(128, 128, 128);
-}
-
 #more {display: none;}
 
 .other-products-container {
@@ -198,9 +189,11 @@ h5.price {
     margin-bottom: 50px;
     text-align: center;
 }
+
 .other-products-container a {
     text-decoration: none;
 }
+
 .other-products-container a:hover {
     cursor: pointer;
 }
@@ -241,7 +234,7 @@ a.product-link:hover {
 .card-name, .card-title, .card-text {
     padding: 5px;
 
-  }
+}
 
   @media only screen and (max-width: 668px) {
     .quantity-button-l, .quantity-button-r, .quantity-input, .add-to-cart-button, .message {
