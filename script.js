@@ -95,7 +95,7 @@ class SiteFooter extends HTMLElement {
 /*Declaration of ind--- variable to make the buttons work*/
 var currentQuantity;
 
-/*Add from the counter*/
+/*Add to the counter*/
    function add() {
     var quantityInput = document.querySelector('.quantity-input');
     var currentQuantity = parseInt(quantityInput.value);
@@ -114,7 +114,7 @@ function subtract() {
     }
 }
 
-/*Add stuff to cart and reset the counter*/
+/*Add stuff to cart and reset the counter (not functional)*/
 function addToCart() {
     currentQuantity = 1;
 }
@@ -137,6 +137,7 @@ setTimeout(()=>{
   sometext.style.display="none";
 },7500);
 
+/*Tuotesivun show more*/
 function showMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
