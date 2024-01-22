@@ -124,6 +124,7 @@ function addToCart() {
 
 /*Display message*/
 function messagePop() {
+  console.log('seepra')
   const message = document.getElementById("message1");
   if(currentQuantity==1) {
     message.innerText = 'Item added to cart!'
@@ -134,6 +135,18 @@ function messagePop() {
   
 }
 
+/*Display message*/
+function messagePop() {
+  console.log('kirahvi')
+  const message = document.getElementById("message2");
+  if(currentQuantity==1) {
+    message.innerText = 'Item added to cart!'
+  }
+  else {
+  message.innerText = currentQuantity + 'items added to cart!';
+  }
+  
+}
 
 /*Begone, text!*/
 
