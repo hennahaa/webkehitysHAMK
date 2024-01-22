@@ -103,24 +103,37 @@ var currentQuantity;
         quantityInput.value = currentQuantity + 1;
     }
 }
-/*Subtract from the counter*/
-function subtract() {
-    var quantityInput = document.querySelector('.quantity-input');
-    var currentQuantity = parseInt(quantityInput.value);
-
-    if (!isNaN(currentQuantity) && currentQuantity > 1) {
-        quantityInput.value = currentQuantity - 1;
-    }
-}
 
 /*Add stuff to cart and reset the counter (not functional)*/
 function addToCart() {
-    currentQuantity = 1;
+  currentQuantity = 1;
+}
+
+/*Subtract from the counter*/
+function subtract() {
+  var quantityInput = document.querySelector('.quantity-input');
+  var currentQuantity = parseInt(quantityInput.value);
+
+  if (!isNaN(currentQuantity) && currentQuantity > 1) {
+      quantityInput.value = currentQuantity - 1;
+  }
 }
 
 /*Display message*/
 function messagePop() {
-  const message = document.getElementById("message");
+  const message = document.getElementById("message1");
+  if(currentQuantity==1) {
+    message.innerText = "Item added to cart!"
+  }
+  else {
+  message.innerText = currentQuantity + " items added to cart!";
+  }
+  
+}
+
+/*Display message*/
+function messagePop2() {
+  const message = document.getElementById("message2");
   if(currentQuantity==1) {
     message.innerText = "Item added to cart!"
   }
@@ -131,24 +144,13 @@ function messagePop() {
 }
 
 /*Begone, text!*/
-setTimeout(()=>{
-  const sometext=document.getElementById("message");
+setTimeout1(()=>{
+  const sometext=document.getElementById("message1");
   sometext.style.display="none";
 },7500);
 
-/*Tuotesivun show more*/
-function showMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Show less";
-    moreText.style.display = "inline";
-  } 
-}
+/*Begone, text!*/
+setTimeout2(()=>{
+  const sometext=document.getElementById("message2");
+  sometext.style.display="none";
+},7500);
