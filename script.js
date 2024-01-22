@@ -136,7 +136,7 @@ function messagePop() {
 }
 
 /*Display message*/
-function messagePop() {
+function messagePop2() {
   console.log('kirahvi')
   const message = document.getElementById("message2");
   if(currentQuantity==1) {
