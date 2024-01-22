@@ -96,6 +96,7 @@ var currentQuantity;
 
 /*Add to the counter*/
    function add() {
+    console.log('kissa')
     var quantityInput = document.querySelector('.quantity-input');
     var currentQuantity = parseInt(quantityInput.value);
 
@@ -104,53 +105,46 @@ var currentQuantity;
     }
 }
 
-/*Add stuff to cart and reset the counter (not functional)*/
-function addToCart() {
-  currentQuantity = 1;
-}
-
 /*Subtract from the counter*/
 function subtract() {
-  var quantityInput = document.querySelector('.quantity-input');
-  var currentQuantity = parseInt(quantityInput.value);
+  console.log('koira')
+    var quantityInput = document.querySelector('.quantity-input');
+    var currentQuantity = parseInt(quantityInput.value);
 
-  if (!isNaN(currentQuantity) && currentQuantity > 1) {
-      quantityInput.value = currentQuantity - 1;
-  }
+    if (!isNaN(currentQuantity) && currentQuantity > 1) {
+        quantityInput.value = currentQuantity - 1;
+    }
+}
+
+/*Add stuff to cart and reset the counter (not functional)*/
+function addToCart() {
+    console.log('kultakala')
+    currentQuantity = 1;
 }
 
 /*Display message*/
 function messagePop() {
   const message = document.getElementById("message1");
   if(currentQuantity==1) {
-    message.innerText = "Item added to cart!"
+    message.innerText = 'Item added to cart!'
   }
   else {
-  message.innerText = currentQuantity + " items added to cart!";
+  message.innerText = currentQuantity + 'items added to cart!';
   }
   
 }
 
-/*Display message*/
-function messagePop2() {
-  const message = document.getElementById("message2");
-  if(currentQuantity==1) {
-    message.innerText = "Item added to cart!"
-  }
-  else {
-  message.innerText = currentQuantity + " items added to cart!";
-  }
-  
-}
 
 /*Begone, text!*/
-setTimeout1(()=>{
+
+setTimeout(()=>{
+  console.log('foo')
   const sometext=document.getElementById("message1");
   sometext.style.display="none";
 },7500);
 
-/*Begone, text!*/
-setTimeout2(()=>{
+setTimeout(()=>{
+  console.log('bar')
   const sometext=document.getElementById("message2");
   sometext.style.display="none";
 },7500);
