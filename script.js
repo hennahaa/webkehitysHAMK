@@ -6,7 +6,7 @@ class SiteHeader extends HTMLElement {
     <nav class="navbar d-flex justify-content-between align-items-center fs-5 py-0 container-fluid bg-light">
         <div class="">
           <a class="navbar-brand" href="index.html">
-            <img src="img/keyboard_2.png" class="img-header-logo float-start" alt="site logo">
+            <img src="img/ndslogo.png" class="img-header-logo float-start ps-2" alt="site logo">
           </a>
         </div>
         <div class="">
@@ -31,7 +31,7 @@ class SiteHeader extends HTMLElement {
         </div>
       <div class="d-flex col-4 justify-content-center">
         <a class="navbar-brand mx-auto" href="index.html">
-          <img src="img/keyboard_2.png" class="img-header-logo" alt="site logo">
+          <img src="img/ndslogo.png" class="img-header-logo" alt="site logo">
         </a>
       </div>
       <div class="col-4 d-flex justify-content-end">
@@ -60,7 +60,7 @@ class SiteFooter extends HTMLElement {
           <div class="col-sm-6 text-wrap text-light">
             <div class="col-2 ps-3">
               <div class="row row-cols-1">
-                <img src="img/keyboard_2.png" class="img-footer-logo object-fit-contain float-left d-none d-md-block" alt="site logo">
+                <img src="img/ndslogo.png" class="img-footer-logo object-fit-contain float-left d-none d-md-block" alt="site logo">
               </div>
             </div>
           </div>
