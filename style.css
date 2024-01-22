@@ -49,7 +49,7 @@ p.card-text-style {
 
 .img-wasd {
     max-width:20%;
-    max-height:10vw;
+    max-height:14vw;
 }
 
 .img-footer-logo {
@@ -157,12 +157,10 @@ h5.price {
     text-align: center;
 }
 
-
 .add-to-cart-button img {
     margin: 0 5px 5px 0;
     align-items: center;
 }
-
 
 .message {
     display: none;
@@ -187,8 +185,6 @@ h5.price {
     font-size: large;
     font-weight: 500;
 }
-
-#more {display: none;}
 
 .other-products-container {
     margin-top: 50px;
@@ -261,7 +257,12 @@ a.product-link:hover {
         margin-left: 0px;
         margin-right: 0px;
     }
+    
   }
+
+  /* Contact page  */
+
+
   h5.text-center {
     color: #5E6E89;
     margin-top: 30px;
@@ -282,8 +283,4 @@ a.product-link:hover {
   .contact-form {
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-
-  .company-title-mobile {
-    font-size: 4vw;
   }
