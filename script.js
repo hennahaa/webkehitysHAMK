@@ -150,5 +150,5 @@ function showMore() {
     dots.style.display = "none";
     btnText.innerHTML = "Show less";
     moreText.style.display = "inline";
-  }
+  } 
 }

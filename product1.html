@@ -33,7 +33,7 @@
  <!-- CONTENT -->
 
  <div class ="container-py5">
-  <h1 class="text-center">&lt;näppäinDesignShop&gt;</N></h1>
+  <h1 class="text-center">&lt;näppäinDesignShop&gt;</h1>
 
 <!-- DESKTOP -->
 <div class="row j justify-content-center d-none d-md-flex">
@@ -52,10 +52,8 @@
         <input type="text" class="quantity-input" value="1" readonly>
         <button class="quantity-button-r" onclick="add()">+</button>
         <button class="add-to-cart-button" onclick="addToCart();messagePop();"> <img src="img/cart2.png" alt=""  >Add to cart</button>
-        <div id="message"></div>    
+        <div class="message"></div>    
       </div>
-      
-      <script src="script.js"></script>
 
       <div class="flavortext-container">
         <p>Mattis nec mauris. Pellentesque a dignissim orci.</p>
@@ -67,15 +65,20 @@
           aliquam vel, dictum non purus. In sed felis ut velit porta
           vestibulum ut ut lacus.
         </p>
-              
+
         <p>Contenta:</p>
+        <ul>
+          <li>2 st littera “A”</li>
+          <li>2 st littera “Я”</li>
+          <li>1 st littera “Ö”</li>
+          <li>1 st littera “Ç”</li>
+        </ul>
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1">Show more</button>
+    
+         <div class="collapse multi-collapse" id="multiCollapse1">
+          
           <ul>
-            <li>2 st littera “A”</li>
-            <li>2 st littera “Я”</li>
-            <li>1 st littera “Ö”</li>
-            <li>1 st littera “Ç”</li>
-            <span id="dots">...</span>
-            <span id="more">
             <li>1 st littera “Ꙟ”</li>
             <li>1 st littera “E”</li>
             <li>1 st littera “A”</li>
@@ -92,9 +95,9 @@
             <li>1 st littera “U”</li>
             <li>1 st littera “N”</li>
             <li>1 st littera “D”</li>
-            </span>
-          </ul>
-          <button onclick="showMore()" id="myBtn">Show more</button>
+            </ul>
+        
+        </div>
       </div>
     </div>    
   </div>
@@ -124,7 +127,7 @@
       </div>
       <div class="button-container col-12 d-flex">
         <button class="add-to-cart-button" onclick="addToCart();messagePop();"><img src="img/cart2.png" alt="">Add to cart</button>
-        <div id="message"></div>
+        <div class="message"></div>
       </div>
       <script src="script.js"></script>
 
@@ -138,34 +141,39 @@
           aliquam vel, dictum non purus. In sed felis ut velit porta
           vestibulum ut ut lacus.
         </p>
-            
+
         <p>Contenta:</p>
         <ul>
           <li>2 st littera “A”</li>
           <li>2 st littera “Я”</li>
           <li>1 st littera “Ö”</li>
           <li>1 st littera “Ç”</li>
-          <span id="dots">...</span>
-          <span id="more">
-          <li>1 st littera “Ꙟ”</li>
-          <li>1 st littera “E”</li>
-          <li>1 st littera “A”</li>
-          <li>1 st littera “S”</li>
-          <li>1 st littera “T”</li>
-          <li>1 st littera “E”</li>
-          <li>1 st littera “R”</li>
-          <li>1 st littera “E”</li>
-          <li>1 st littera “G”</li>
-          <li>1 st littera “G”</li>
-          <li>1 st littera “ ” (Spacem-barus)</li>
-          <li>1 st littera “F”</li>
-          <li>1 st littera “O”</li>
-          <li>1 st littera “U”</li>
-          <li>1 st littera “N”</li>
-          <li>1 st littera “D”</li>
-          </span>
         </ul>
-        <button class="show-more"onclick="showMore()" id="myBtn">Show more</button>
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse2">Show more</button>
+    
+         <div class="collapse multi-collapse" id="multiCollapse2">
+          
+          <ul>
+            <li>1 st littera “Ꙟ”</li>
+            <li>1 st littera “E”</li>
+            <li>1 st littera “A”</li>
+            <li>1 st littera “S”</li>
+            <li>1 st littera “T”</li>
+            <li>1 st littera “E”</li>
+            <li>1 st littera “R”</li>
+            <li>1 st littera “E”</li>
+            <li>1 st littera “G”</li>
+            <li>1 st littera “G”</li>
+            <li>1 st littera “ ” (Spacem-barus)</li>
+            <li>1 st littera “F”</li>
+            <li>1 st littera “O”</li>
+            <li>1 st littera “U”</li>
+            <li>1 st littera “N”</li>
+            <li>1 st littera “D”</li>
+            </ul>
+        
+        </div>
       </div>
     </div>    
   </div>
