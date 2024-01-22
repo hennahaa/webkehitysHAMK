@@ -69,16 +69,15 @@ class SiteFooter extends HTMLElement {
               <div class="col-3 mx-3">
                 <h5 class="footer-h">About</h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a href="#" class="nav-link ps-0 text-light">Lorem Ipsum</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link ps-0 text-light">Dolor amet</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link ps-0 text-light">Consectetur</a></li>
-            
+                  <li class="nav-item"><a href="about.html" class="nav-link ps-0 text-light">Lorem</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link ps-0 text-light">Ipsum</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link ps-0 text-light">Consectetur</a></li>
                 </ul>
               </div>
-              <div class="col-3 mx-5">
+              <div class="col-3 mx-3">
                 <h5 class="footer-h">Contact</h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a href="contact.html" class="nav-link ps-0 text-light">Customer Service</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link ps-0 text-light">Company</a></li>
                   <li class="nav-item"><a href="contact.html" class="nav-link ps-0 text-light">Locations</a></li>
                   <li class="nav-item"><a href="contact.html" class="nav-link ps-0 text-light">Socials</a></li>
                 </ul>
